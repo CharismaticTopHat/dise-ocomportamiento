@@ -5,19 +5,19 @@ export class Character {
     }
   
     performMove() {
-      return this.MoveBehavior.weapon();
+      return this.MoveBehavior.move();
     }
   
     performAttack() {
-      return this.WeaponBehavior.move();
+      return this.WeaponBehavior.attack();
     }
   
     setMoveBehavior(m) {
-      this.flyBehavior = m;
+      this.MoveBehavior = m;
     }
   
     setWeaponBehavior(w) {
-      this.quackBehavior = w;
+      this.WeaponBehavior = w;
     }
 
     showCharacter(){
